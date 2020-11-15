@@ -19,12 +19,15 @@ M_LIMIT = 10000
     "--size", "-s", default=M_LIMIT, help="The max value of the m range"
 )
 @click.option(
+    "--diagram", "-d", is_flag=True, default=False, help="Create diagram image"
+)
+@click.option(
     "--verbose", "-v", is_flag=True, default=False, help="Log at debug level"
 )
-def cli(size, verbose):
+def cli(size, diagram, verbose):
     if verbose:
         log.setLevel(logging.DEBUG)
-    main(size)
+    main(size, diagram)
 
 
 if __name__ == '__main__':

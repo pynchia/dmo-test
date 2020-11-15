@@ -1,18 +1,24 @@
 astroid==2.4.2
 attrs==20.3.0
 click==7.1.2
--e git+git@github.com:pynchia/dmo-test.git@d6c26a0294bea955a46aa96468a68e82aeebda7c#egg=cmn
+-e git+git@github.com:pynchia/dmo-test.git@caedfed7c512aebfa113bfe7a0d38d5163282151#egg=cmn
+cycler==0.10.0
 iniconfig==1.1.1
 isort==5.6.4
+kiwisolver==1.3.1
 lazy-object-proxy==1.4.3
+matplotlib==3.3.3
 mccabe==0.6.1
+numpy==1.19.4
 packaging==20.4
-# pkg-resources==0.0.0
+Pillow==8.0.1
+pkg-resources==0.0.0
 pluggy==0.13.1
 py==1.9.0
 pylint==2.6.0
 pyparsing==2.4.7
 pytest==6.1.2
+python-dateutil==2.8.1
 six==1.15.0
 toml==0.10.2
 wrapt==1.12.1
