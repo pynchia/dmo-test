@@ -1,12 +1,9 @@
 import pytest
 
-import cmn
-from cmn.cli import cli
-
 
 @pytest.fixture
-def sample_mn_and_result():
-    MN_VALUES = [
+def mn_values(scope='session'):
+    return [
         (1, 1),
         (2, 1),
         (1, 2),
@@ -14,6 +11,9 @@ def sample_mn_and_result():
         (2, 2),
         (3, 3),
     ]
+
+@pytest.fixture
+def sample_mn_and_funct_results(mn_values):
     EXPECTED_RESULTS = [
         1,
         2,
@@ -22,4 +22,16 @@ def sample_mn_and_result():
         1,
         5,
     ]
-    return zip(MN_VALUES, EXPECTED_RESULTS)
+    return zip(mn_values, EXPECTED_RESULTS)
+
+@pytest.fixture
+def sample_mn_and_converge_to_1_steps(mn_values):
+    STEPS = [
+        1,
+        2,
+        3,
+        2,
+        1,
+        6,
+    ]
+    return zip(mn_values, STEPS)
