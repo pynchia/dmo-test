@@ -28,6 +28,9 @@ def memoize(f):
 
 @memoize
 def c(m,n):
+    """
+    The function cm(n) itself
+    """
     log.info(f"enter c({m=}, {n=})")
     if n<=1:
         log.info(f"bottom of recursion: returning {m}")

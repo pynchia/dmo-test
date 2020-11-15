@@ -3,14 +3,12 @@ The main module of the application
 """
 import logging
 
-from cmn.function import c
+from cmn.converge import count_steps_for_many_m
 
 
 log = logging.getLogger()
 
 
-M_LIMIT = 10000
-
-
 def main(size):
-    pass
+    for m, steps in enumerate(count_steps_for_many_m(size), start=1):
+        print(f"c{m} reaches 1 in {steps=}")

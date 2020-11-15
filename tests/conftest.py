@@ -35,3 +35,10 @@ def sample_mn_and_converge_to_1_steps(mn_values):
         6,
     ]
     return zip(mn_values, STEPS)
+
+@pytest.fixture
+def steps_4_m_values(scope='session'):
+    return [
+        1,
+        2,
+    ]
