@@ -4,7 +4,7 @@ The command line interface to the application
 import click
 import logging
 
-from cmn.main import main
+from cmn.main import main, M_LIMIT
 
 
 logging.basicConfig()
