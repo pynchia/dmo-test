@@ -32,7 +32,7 @@ the external packages first
 
 and then the internal modules
 
-`pip install .`
+`pip install -e .`
 
 ## Execute the tests
 
