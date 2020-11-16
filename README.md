@@ -67,17 +67,17 @@ The application covers points b) and d) of the assignment, i.e.
     b) Adapt the implementation to calculate the number of steps for each m ∈ [1, 10000].
     d) Print the number of steps for each m ∈ [1, 10000] as diagram.`
 
-Point a) is covered by specific tests and by the code that relies on it.
+Point a) is covered by specific tests and by the code that relies on it
 
     a) Implement a program to calculate the number of steps to reach 1 the first time for any given m ∈ N .
 
 Point c), i.e.
 
-        c) Try to improve the implementation to calculate the steps as fast as possbile.
+    c) Try to improve the implementation to calculate the steps as fast as possbile.
 
 is covered implicitly by the use of [memoization](https://en.wikipedia.org/wiki/Memoization)
 
-Of course the set of values for m could in principle be split into chunks and assigned to several processes.
+Of course the set of values for `m` could in principle be split into chunks and assigned to several processes.
 
 For that purpose python's `multiprocessing` module would be a good candidate.
 
@@ -92,4 +92,5 @@ I hope my deliverables show the way I work as a software engineer.
 I am available for any clarification.
 
 Best regards,
+
   Mauro Bertolotto Bianc
