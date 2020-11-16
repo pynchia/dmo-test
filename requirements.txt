@@ -1,7 +1,7 @@
 astroid==2.4.2
 attrs==20.3.0
 click==7.1.2
--e git+git@github.com:pynchia/dmo-test.git@caedfed7c512aebfa113bfe7a0d38d5163282151#egg=cmn
+# -e git+git@github.com:pynchia/dmo-test.git@caedfed7c512aebfa113bfe7a0d38d5163282151#egg=cmn
 cycler==0.10.0
 iniconfig==1.1.1
 isort==5.6.4
@@ -12,7 +12,7 @@ mccabe==0.6.1
 numpy==1.19.4
 packaging==20.4
 Pillow==8.0.1
-pkg-resources==0.0.0
+# pkg-resources==0.0.0
 pluggy==0.13.1
 py==1.9.0
 pylint==2.6.0
